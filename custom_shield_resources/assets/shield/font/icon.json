@@ -1,0 +1,18 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "shield:icon/ready.png",
+			"ascent": 8,
+			"height": 32,
+			"chars": ["R"]
+		},
+		{
+			"type": "bitmap",
+			"file": "shield:icon/ready.png",
+			"ascent": 52,
+			"height": 64,
+			"chars": ["r"]
+		}
+	]
+}

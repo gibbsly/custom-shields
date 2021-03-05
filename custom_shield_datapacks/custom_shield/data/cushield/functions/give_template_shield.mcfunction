@@ -1,0 +1,3 @@
+give @s minecraft:carrot_on_a_stick{CustomModelData:1,shield:{parry_time:0,decay_rate:15,x_angle:90,y_angle:90,max_time:40,cooldown:10,block_value:8,default_model:1,blocking_model:2,durability:100,disable_time:50,can_reflect_arrows:1b},display:{Name:'{"text":"Shield","italic":false}'}}
+
+give @s minecraft:carrot_on_a_stick{CustomModelData:3,shield:{parry_time:10,decay_rate:0,x_angle:90,y_angle:60,max_time:10,cooldown:10,block_value:10,player_parry_effect:0,entity_parry_effect:1,default_model:3,blocking_model:4,durability:100,can_coyote:1,coyote_time:2,disable_resistant:1b},display:{Name:'{"text":"Buckler","italic":false}'}}

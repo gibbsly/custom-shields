@@ -1,0 +1,8 @@
+{
+	"subtitles.item.shield.up": "Shield up",
+	"subtitles.item.shield.down": "Shield down",
+	"subtitles.item.shield.ready": "Shield ready",
+	"subtitles.item.shield.break": "Shield disabled",
+	"item.modifiers.blocking": "While Blocking:",
+	"attribute.name.shield.block": "Damage Prevention"
+}
