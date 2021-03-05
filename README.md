@@ -62,7 +62,7 @@ Timing values
 > 
 > `cooldown`* | value: time | amount of time you after you drop your shield before you can block again
 
-Durability[¹]()
+Durability[¹](https://github.com/gibbsly/custom-shields#1-durability)
 > `durability` | value: int | maximum durability (unbreakable if not specified)
   
 Values used for damage calculation
