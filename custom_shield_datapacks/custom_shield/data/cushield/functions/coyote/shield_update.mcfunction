@@ -42,6 +42,7 @@ execute if data storage cushield:main player[{Slot:-106b,tag:{shield:{can_coyote
 #listen handling
 execute store success score @s cush.cy.has if entity @s[tag=cushield.coyote]
 scoreboard players add @s[tag=cushield.coyote] ehp_listen 1
+execute if score @s[tag=!ehp_listen] ehp_listen matches 1.. run function entityid:listen/ehp_enable
 
 #clearing storage
 data modify storage cushield:main player set value {}

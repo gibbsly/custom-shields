@@ -28,7 +28,7 @@ execute store result score @s cush.py.eff.en run data get storage cushield:main 
 execute store result score @s cush.durability run data get storage cushield:main shield.tag.shield.current_durability
 
 #default values
-execute unless score @s cush.dis.time matches 1.. run scoreboard players set @s cush.dis.time 100
+execute unless score @s cush.dis.time matches 1.. run scoreboard players set @s cush.dis.time 50
 
 #calculating dynamic values
 scoreboard players operation ticks= cush.main = @s cush.max_time

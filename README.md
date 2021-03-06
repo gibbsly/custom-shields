@@ -90,7 +90,7 @@ Event values. These specify a command to run in the functions `cushield:event/<b
 Disabler attributes.
 > `disable_resistant` | true/false | can't be disabled when hit with an item in the `#cushield:disabler` item tag/item with `{disabler:1b}`
 > 
-> `disable_time` | value: time | amount of time that shield gets disabled (default value 100, overridden if specified)
+> `disable_time` | value: time | amount of time that shield gets disabled (default value 50, overridden if specified)
   
 Arrow reflection.
 > `can_reflect_arrows` | true/false | weather the shield can reflect blocked arrows

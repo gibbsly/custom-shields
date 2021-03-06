@@ -1,5 +1,6 @@
 #starting listen
 scoreboard players add @s ehp_listen 1
+execute if score @s[tag=!ehp_listen] ehp_listen matches 1.. run function entityid:listen/ehp_enable
 tag @s add cushield.blocking
 
 #sounds

@@ -11,5 +11,8 @@
 	"attribute.name.shield.parry_time": "Parry Duration",
 	"attribute.name.shield.decay.high": "Low Persistence",
 	"attribute.name.shield.decay.med": "Medium Persistence",
-	"attribute.name.shield.decay.low": "High Persistence"
+	"attribute.name.shield.decay.low": "High Persistence",
+	"attribute.name.shield.angle.wide": "Wide Block Angle",
+	"attribute.name.shield.angle.normal": "Average Block Angle",
+	"attribute.name.shield.angle.narrow": "Narrow Block Angle"
 }
