@@ -10,9 +10,14 @@ For ease of use, there is a [generator](https://www.crowdford.com/tools/shield) 
 2. entity_hit_detection | My [entity hit detection datapack](https://github.com/gibbsly/ehid), packaged with this system since it is dependent on it to function.
 
 ### Resource Pack
-The resource pack is required for the shield models and sounds, as well as all text used.
+The resource pack is required for the shield models and sounds, as well as all text used. It is intended to be able to be merged with other resource packs, All you have to do is merge the resource pack for this system into your resourcepack.  
 
 There are translations for all the strings used for this in the `shield/lang` folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
+
+### Adding Models
+Adding a new model to use for a shield requires you to create 2 models, a standard model, and a blocking model. I have 2 template models provided in the resource pack. Once you have your models made, you have to add them to the `CustomModelData` overrides on the `carrot_on_a_stick` item model. You aren't limited to shield shaped models for this, this system doesn't care what the models look like, so you can re-create swords that can block like in 1.7.
+
+Included in the pack are 2 template shields, you can open the models in [Blockbench](https://blockbench.net/) to get an idea of how the models are setup.
 
 # About the shields
 In this section I will go over the shield system in detail. 
@@ -47,9 +52,6 @@ If you want a shield to not be disabled by a disabler item, you can specify that
 
 ### Bashing
 Shields can execute a bash effect if you sprint while blocking, this is specified with the `block_effect` attribute. 
-
-## Adding Models
-Adding a new model to use for a shield requires you to create 2 models, a standard model, and a blocking model. I have 2 template models provided in the resource pack. Once you have your models made, you have to add them to the `CustomModelData` overrides on the `carrot_on_a_stick` item model. You aren't limited to shield shaped models for this, this system doesn't care what the models look like, so you can re-create swords that can block like in 1.7.
 
 ## Configurable Attributes 
 Shields have 18 configurable attributes you can use, any attributes marked with a `*` are required for the shield to function as intended. All these attributes are in an object called `shield` in the items tags.
