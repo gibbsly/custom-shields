@@ -14,7 +14,7 @@ The resource pack is required for the shield models and sounds, as well as all t
 
 There are translations for all the strings used for this in the `shield/lang` folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
 
-### Adding Models
+#### Adding Models
 Adding a new model to use for a shield requires you to create 2 models, a standard model, and a blocking model. I have 2 template models provided in the resource pack. Once you have your models made, you have to add them to the `CustomModelData` overrides on the `carrot_on_a_stick` item model. You aren't limited to shield shaped models for this, this system doesn't care what the models look like, so you can re-create swords that can block like in 1.7.
 
 Included in the pack are 2 template shields, you can open the models in [Blockbench](https://blockbench.net/) to get an idea of how the models are setup.
