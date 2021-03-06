@@ -64,7 +64,7 @@ Durability[[1]](https://github.com/gibbsly/custom-shields#1-durability)
 > `durability` | value: int | maximum durability (unbreakable if not specified)
   
 Values used for damage calculation
-> `block_value`* | value | maximum amount of damage to block from non-parry block (not required if you have a `parry_time` equal to `max_time`)
+> `block_value`*[[2]](https://github.com/gibbsly/custom-shields#2-block-value) | value | maximum amount of damage to block from non-parry block 
 > 
 > `minimum_block_value` | value | minimum amount of damage to block with a non-parry block, linear falloff from maximum value over the `max_time` attribute's duration (default 0)
   
@@ -104,6 +104,8 @@ If you want to disable a specific player from seeing the icon, you can set the p
 
 ## Footnotes
 ### 1: durability
-Since the item that is being used for the shields is `carrot_on_a_stick`, there is only 25 possible durabilities to display all damage values for the shields. This means that the `f3+h` "Durability" value will be inaccurate unless the maximum durability of your shield happens to be 25.
-### 2: shulker box
+Since the item that is being used for the shields is `carrot_on_a_stick`, there is only 25 possible durabilities to display all damage values for the shields. This means that the `f3+h` "Durability" value will beinaccurate unless the maximum durability of your shield happens to be 25.
+### 2: block value
+the `block_value` attribute is not required if you have a `parry_time` equal to `max_time`
+### 3: shulker box
 This system modifies the loot table of the standard shulker box, so that it drops dynamically if mined with a `debug_stick`.
