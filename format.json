@@ -22,7 +22,7 @@
 	"disable_type": { "type": "selection", "name": "Disable Status", "information": "How shield interacts disabler items", "elements": ["disable_types"] },
 	"disable_types": {
 		"type": "collection",
-		"disable_time": { "type": "group", "name": "Disable Time", "information": "The amount of time the shield gets disabled when hit with a disabler item<br>defaults to 50", "elements": ["param.disable_time"] },
+		"disable_time": { "type": "group", "name": "Disable Time", "information": "The amount of time the shield gets disabled when hit with a disabler item (in ticks)<br>defaults to 50", "elements": ["param.disable_time"] },
 		"disable_resistant": { "type": "group", "name": "Disable Resistant", "information": "Weather this shield gets disabled when hit by a disabler item, if false, specify a time instead.", "elements": ["param.disable_resistant"] }
 	},
 	
