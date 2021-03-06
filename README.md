@@ -1,6 +1,8 @@
 # Custom Shields
 This is a system that adds custom shields to Minecraft with configurable attributes. 
 
+For ease of use, there is a [generator](https://www.crowdford.com/tools/shield) that you can use to make shields for this system.
+
 ## In this repo
 
 ### Datapacks
@@ -8,10 +10,12 @@ This is a system that adds custom shields to Minecraft with configurable attribu
 2. entity_hit_detection | My [entity hit detection datapack](https://github.com/gibbsly/ehid), packaged with this system since it is dependent on it to function.
 
 ### Resource Pack
-The resource pack is required for the shield models and sounds, there are translations for all the strings used for this in the `shield/lang` folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
+The resource pack is required for the shield models and sounds, as well as all text used.
+
+There are translations for all the strings used for this in the `shield/lang` folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
 
 # About the shields
-In this section I will go over the shield system in detail. I also have a video [here](coming soon) that covers everything in detail.
+In this section I will go over the shield system in detail. 
 
 The function `cushield:give_template_shield` gives you some template shields that you can try out. If you want to generate a shield there is a generator [here](https://www.crowdford.com/tools/shield).
 
