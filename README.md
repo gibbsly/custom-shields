@@ -120,6 +120,6 @@ This system modifies the loot table of the standard shulker box, so that it drop
 ## Credit
 **Main Functionality**: [gibbsly](https://github.com/gibbsly) 
 
-**Design**: [Asometric](https://github.com/adri2711) [pearuhdox](https://github.com/pearuhdox)
+**Design**: [Asometric](https://github.com/adri2711), [pearuhdox](https://github.com/pearuhdox)
 
 **[Shield Generator Application](https://www.crowdford.com/tools/shield) and [Inventory Restoration System](https://github.com/McTsts/inv-manipulation)**: [McTsts](https://github.com/McTsts)
