@@ -1,6 +1,6 @@
 #times
 scoreboard players set @s[scores={cush.use=1..}] cush.block_time 5
-scoreboard players remove @s[scores={cush.wait=1..}] cush.wait 1
+execute if score icon= cush.main matches 1 if entity @s[tag=!cushield.can_block] unless score @s cush.title matches -1 run function cushield:block/cooldown
 
 #can block logic
 execute unless entity @s[tag=cushield.can_block] unless score @s cush.block_time matches 0.. unless score @s cush.wait matches 1.. run function cushield:block/can

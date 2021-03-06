@@ -1,3 +1,6 @@
+#ending block
+function cushield:block/unblock_all
+
 #death
 execute store result score dm= cush.main run gamerule showDeathMessages
 gamerule showDeathMessages false

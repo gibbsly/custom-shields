@@ -13,7 +13,6 @@ execute if data storage cushield:main shield.Slot run tag @s add cushield.offhan
 #writing to scoreboard
 execute store result score @s cush.bash run data get storage cushield:main shield.tag.shield.bash_effect
 execute store result score @s cush.parry run data get storage cushield:main shield.tag.shield.parry_time
-execute store result score @s cush.decay run data get storage cushield:main shield.tag.shield.decay_rate
 execute store result score can= cush.cy.dur run data get storage cushield:main shield.tag.shield.can_coyote
 execute store result score @s cush.x_angle run data get storage cushield:main shield.tag.shield.x_angle 0.5
 execute store result score @s cush.y_angle run data get storage cushield:main shield.tag.shield.y_angle 0.5
@@ -23,9 +22,18 @@ execute store result score @s cush.dis.dont run data get storage cushield:main s
 execute store result score @s cush.dis.time run data get storage cushield:main shield.tag.shield.disable_time
 execute store result score @s cush.cooldown run data get storage cushield:main shield.tag.shield.cooldown
 execute store result score @s cush.block_val run data get storage cushield:main shield.tag.shield.block_value
+execute store result score min= cush.main run data get storage cushield:main shield.tag.shield.minimum_block_value
 execute store result score @s cush.py.eff.pl run data get storage cushield:main shield.tag.shield.player_parry_effect
 execute store result score @s cush.py.eff.en run data get storage cushield:main shield.tag.shield.entity_parry_effect
 execute store result score @s cush.durability run data get storage cushield:main shield.tag.shield.current_durability
 
 #default values
 execute unless score @s cush.dis.time matches 1.. run scoreboard players set @s cush.dis.time 100
+
+#calculating dynamic values
+scoreboard players operation ticks= cush.main = @s cush.max_time
+scoreboard players operation ticks= cush.main -= @s cush.parry
+scoreboard players operation @s cush.decay = @s cush.block_val
+scoreboard players operation @s cush.decay -= min= cush.main
+scoreboard players operation @s cush.decay *= 100 num
+scoreboard players operation @s cush.decay /= ticks= cush.main

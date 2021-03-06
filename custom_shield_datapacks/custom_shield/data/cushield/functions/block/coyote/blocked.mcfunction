@@ -8,6 +8,7 @@ execute if score @s cush.reflect matches 1 unless score @s cush.cy.ref.ty matche
 scoreboard players operation @s cush.wait = @s cush.cooldown
 execute if score @s cush.cy.disabl matches 1 unless score @s cush.dis.dont matches 1 run function cushield:blocked/disabled
 execute if score @s cush.cy.disabl matches 1 unless score @s cush.dis.dont matches 1 run scoreboard players operation @s cush.wait = @s cush.dis.time
+scoreboard players operation @s cush.wait.max = @s cush.wait
 tag @s remove cushield.can_block
 
 #resetting total

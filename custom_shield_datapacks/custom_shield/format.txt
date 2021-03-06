@@ -7,7 +7,7 @@ cooldown            | value	- time	| amount of time you after you drop your shie
 durability          | value	- int	| maximum durability (unbreakable if not specified)
 
 block_value         | value			| amount of damage to reduce from non-parry block
-decay_rate          | value			| decay rate for block value 
+minimum_block_value | value			| minimum amount of damage to block
 
 default_model       | value			| custom model data used for default display
 blocking_model      | value			| custom model data used for blocking display

@@ -1,8 +1,15 @@
 {
+	"item.shield": "Shield",
+	"item.buckler": "Buckler",
 	"subtitles.item.shield.up": "Shield up",
 	"subtitles.item.shield.down": "Shield down",
 	"subtitles.item.shield.ready": "Shield ready",
 	"subtitles.item.shield.break": "Shield disabled",
 	"item.modifiers.blocking": "While Blocking:",
-	"attribute.name.shield.block": "Damage Prevention"
+	"attribute.name.shield.block": "Max Damage Reduction",
+	"attribute.name.shield.block_time": "Block Duration",
+	"attribute.name.shield.parry_time": "Parry Duration",
+	"attribute.name.shield.decay.high": "Low Persistence",
+	"attribute.name.shield.decay.med": "Medium Persistence",
+	"attribute.name.shield.decay.low": "High Persistence"
 }

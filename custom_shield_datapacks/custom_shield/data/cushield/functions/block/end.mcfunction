@@ -9,6 +9,7 @@ execute unless entity @s[tag=cushield.blocked] run function cushield:block/drop_
 execute unless entity @s[tag=cushield.end_from_hand] run function cushield:hand_check
 scoreboard players operation @s cush.wait = @s cush.cooldown
 scoreboard players operation @s[tag=cushield.disable] cush.wait = @s cush.dis.time
+scoreboard players operation @s cush.wait.max = @s cush.wait
 tag @s remove cushield.can_block
 tag @s remove cushield.blocked
 tag @s remove cushield.end

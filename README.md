@@ -19,9 +19,7 @@ The function `cushield:give_template_shield` gives you some template shields tha
 If you are holding a shield item in your main or offhand, and holding use (right click), you will start blocking. This is immediate, unlike vanilla shields. Shields in your offhand will be prioritized over mainhand shields.
  
 ### Normal
-A normal block has a damage reduction formula that is applied to the damage you receive. 
-
-The damage formula is `([damage received] * 100 - ((block_value * 100) - (([total time blocking in ticks] - parry_time) * decay_rate)))/100`.
+A normal block has a linear damage reduction that starts at the `block_value` attribute, and goes down to the `minimum_block_value` over the entire duration of `max_time` attribute
 
 ### Parry
 If a shield can parry, specified by the `parry_time` attribute, and you are hit within the parry window specified by that attribute, you will execute a parry. A parry negates all damage you would have received. 
@@ -62,13 +60,13 @@ Timing values
 > 
 > `cooldown`* | value: time | amount of time you after you drop your shield before you can block again
 
-Durability[¹](https://github.com/gibbsly/custom-shields#1-durability)
+Durability[[1]](https://github.com/gibbsly/custom-shields#1-durability)
 > `durability` | value: int | maximum durability (unbreakable if not specified)
   
 Values used for damage calculation
-> `block_value`* | value | amount of damage to reduce from non-parry block
+> `block_value`* | value | maximum amount of damage to block from non-parry block (not required if you have a `parry_time` equal to `max_time`)
 > 
-> `decay_rate` | value: model | decay rate for block value 
+> `minimum_block_value` | value | minimum amount of damage to block with a non-parry block, linear falloff from maximum value over the `max_time` attribute's duration (default 0)
   
 Model values, these specify what CustomModelData values to use.
 > `default_model`* | value | custom model data used for default display
@@ -98,14 +96,9 @@ Arrow reflection.
 > `can_reflect_arrows` | true/false | weather the shield can reflect blocked arrows
 
 ## Icon
-When a player's shield cooldown is over, an icon is displayed, you can change where this displays/if it displays with a score.
+When a player's shield is on cooldown, an icon will be displayed on the actionbar, this can be disabled if needed.
 
-`scoreboard players set icon= cush.main <0..2>` configures the value
-> `0` | disables the icon from displaying for all players.
->
-> `1` | displays the icon on a subtitle, this overrides any current titles, and resets the title times to the default value when it is done displaying. You can change the times it sets back to by modifying the `title times` command in the function `cushield:event/reset_title_times`. This is the default value.
->
-> `2` | displays the icon in the actionbar.
+`scoreboard players set icon= cush.main <0..1>` enables or disables the icon for all players.
 
 If you want to disable a specific player from seeing the icon, you can set the player's `cush.title` score to `-1`. To re-enable it, just set the value to `0`.
 

@@ -1,6 +1,7 @@
 #dummy scores
 scoreboard objectives add cush.main dummy
 scoreboard objectives add cush.wait dummy
+scoreboard objectives add cush.wait.max dummy
 scoreboard objectives add cush.block_time dummy
 scoreboard objectives add cush.block_total dummy
 scoreboard objectives add cush.durability dummy
@@ -11,7 +12,7 @@ scoreboard objectives add cush.effect dummy
 
 #title display time and default icon mode
 scoreboard objectives add cush.title dummy
-execute unless score icon= cush.main matches 0..2 run scoreboard players set icon= cush.main 1
+execute unless score icon= cush.main matches 0..1 run scoreboard players set icon= cush.main 1
 
 #coyote time scores
 scoreboard objectives add cush.cy.dur dummy "coyote time duration"
@@ -67,6 +68,7 @@ scoreboard players set -1 num -1
 scoreboard players set 2 num 2
 scoreboard players set 4 num 4
 scoreboard players set 10 num 10
+scoreboard players set 11 num 11
 scoreboard players set 20 num 20
 scoreboard players set 25 num 25
 scoreboard players set 100 num 100
