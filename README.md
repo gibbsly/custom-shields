@@ -98,7 +98,7 @@ Arrow reflection.
 ## Adding effects
 The `bash_effect`, `player_parry_effect`, and `entity_parry_effect` attributes all use an ID system to run effects. The ID you specify runs a command in the corresponding function in the [event](https://github.com/gibbsly/custom-shields/tree/main/custom_shield_datapacks/custom_shield/data/cushield/functions/event) folder. The value is written onto the score `effect= cush.main`, so you can use that to specify what function/command to run based on that score. 
 
-The effect function is called on the player for `bash_effect` and `player_parry_effect`, and run on the entity you parried for `entity_parry_effect`.
+The effect function is run on the player for `bash_effect` and `player_parry_effect`, and run on the entity you parried for `entity_parry_effect`.
 
 I have example commands in the functions that can be safely removed or changed.
 
