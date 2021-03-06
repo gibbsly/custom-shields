@@ -1,0 +1,51 @@
+{
+	"default": ["info0","name","default_model","blocking_model","info3","blocking_type","info1","max_time","cooldown","durability","bash_effect","angles","can_reflect_arrows","info2","disable_type"],
+	"advanced": ["info0","name","default_model","blocking_model","info3","blocking_type","info1","max_time","cooldown","durability","x_angle","y_angle","bash_effect","can_reflect_arrows","info2","disable_type"],
+	
+	"name": { "type": "string", "name": "Name", "information": "The name of the shield!" },
+	"angles": { "type": "dropdown", "name": "Block Angles", "information": "Block angle value<br>Wide: 120°<br>Average: 90°<br>Narrow: 60°", "elements": ["Wide::wide/90/120","Average::normal/90/90","Narrow::narrow/90/60"], "value": "normal/90/90" },
+	"x_angle": { "type": "number", "name": "Block Angle X", "information": "vertical block angle<br>0 to 180<br>All presets use 90°", "min": 0, "max": 180, "step": 1 },
+	"y_angle": { "type": "number", "name": "Block Angle Y", "information": "horizontal block angle<br>0 to 360<br>Preset Values:<br>Wide: 120°<br>Average: 90°<br>Narrow: 60°", "min": 0, "max": 360, "step": 1 },
+	"max_time": { "type": "number", "name": "Max Time", "information": "The maximum amount of time you can hold up the shield (in ticks)<br>0 to 1200", "min": 0, "max": 1200, "step": 1 },
+	"cooldown": { "type": "number", "name": "Cooldown", "information": "The amount of time after your shield drops before you can use it again (in ticks)<br>0 to 1200", "min": 0, "max": 1200, "step": 1 },
+	"durability": { "type": "number", "name": "Durability", "information": "The maximum amount of times your shield can block an attack before it breaks<br>0 to 6000", "min": 0, "max": 6000, "step": 1 },
+	"default_model": { "type": "number", "name": "Default Model", "information": "The CustomModelData value to use for the non-blocking model", "min": 0, "max": 16777216, "step": 1 },
+	"blocking_model": { "type": "number", "name": "Blocking Model", "information": "The CustomModelData to use for the blocking model", "min": 0, "max": 16777216, "step": 1 },
+	"can_reflect_arrows": { "type": "dropdown", "name": "Can Reflect Arrows", "information": "If the shield can reflect arrows when blocking", "elements": ["false","true"] },
+	"bash_effect": { "type": "number", "name": "Bash Effect ID", "information": "The effect to run when you bash<br> The ID corresponds to a command in the \"cushiled:event/bash_effect\" function<br>0 for no effect", "min": 0, "max": 10000, "step": 1 },
+	
+	"info0": { "type": "text", "name": "Information #1", "information_bold": "Basic info:", "information": "Basic item display info" },
+	"info1": { "type": "text", "name": "Information #2", "information_bold": "<br>Basic Technical:", "information": "General settings and time values." },
+	"info2": { "type": "text", "name": "Information #3", "information_bold": "<br>Disable Status:", "information": "How the shield interacts with disabler items." },
+	"info3": { "type": "text", "name": "Information #4", "information_bold": "<br>Blocking Type:", "information": "The type of block that this shield uses; either normal or parry." },
+	
+	"disable_type": { "type": "selection", "name": "Disable Status", "information": "How shield interacts disabler items", "elements": ["disable_types"] },
+	"disable_types": {
+		"type": "collection",
+		"disable_time": { "type": "group", "name": "Disable Time", "information": "The amount of time the shield gets disabled when hit with a disabler item<br>defaults to 50", "elements": ["param.disable_time"] },
+		"disable_resistant": { "type": "group", "name": "Disable Resistant", "information": "Weather this shield gets disabled when hit by a disabler item, if false, specify a time instead.", "elements": ["param.disable_resistant"] }
+	},
+	
+	"blocking_type": { "type": "selection", "name": "Blocking Type", "information": "Determines which type of blocking is used.", "elements": ["blocking_types"] },
+	"blocking_types": {
+		"type": "collection",
+		"normal": { "type": "group", "name": "Normal Blocking", "information": "Standard blocking, damage reduction used", "elements": ["param.block_value","param.minimum_block_values"], "modes": ["default"] },
+		"normal_alt": { "type": "group", "name": "Normal Blocking", "information": "Standard blocking, damage reduction used", "elements": ["param.block_value","param.minimum_block_value"], "modes": ["advanced"] },
+		"parry": { "type": "group", "name": "Parry Blocking", "information": "Parry blocking, blocks all damage", "elements": ["param.player_parry_effect","param.entity_parry_effect"], "modes": ["default"] },
+		"parry_alt": { "type": "group", "name": "Parry Blocking", "information": "Parry blocking, blocks all damage", "elements": ["param.player_parry_effect","param.entity_parry_effect","param.coyote_time"], "modes": ["advanced"] }
+	},
+	
+	"param": {
+		"type": "collection",
+		"disable_resistant": { "type": "dropdown", "name": "Disable Resistant", "information": "If false, specify a time instead", "elements": ["true"] },
+		"disable_time": { "type": "number", "name": "Disable Time", "information": "0 to 1200", "min": 0, "max": 1200, "step": 1, "value": 50 },
+		"coyote_time": { "type": "number", "name": "Coyote Time", "information": "The amount of time after a player is hit that they can parry with this shield (in ticks)<br>recommended value of 2", "min": 0, "max": 1000, "step": 1, "value": 2 },
+		"block_value": { "type": "number", "name": "Block Value", "information": "The amount of damage this shield prevents from an attack<br>1 to 40", "min": 1, "max": 40, "step": 1, "value": 4 },
+		"minimum_block_values": { "type": "dropdown", "name": "Persistence", "information": "The amount of block value that remains by the end of the blocking time<br>High: No drop off<br>Medium: half of block value<br>Low: 0", "elements": ["High::high/1","Medium::med/0.5","Low::low/0"], "value": "med/0.5" },
+		"minimum_block_value": { "type": "number", "name": "Minimum Block Value", "information": "The amount of damage that is blocked at minimum, a linear drop off from block value over the the entire block time<br>should be less than or equal to block value", "min": 0, "max": 10000, "step": 1 },
+		"player_parry_effect": { "type": "number", "name": "Player Parry Effect", "information": "The effect to apply to the player when successfully parrying<br> The ID corresponds to a command in the \"cushiled:event/player_parry_effect\" function<br>0 for no effect", "min": 0, "max": 10000, "step": 1 },
+		"entity_parry_effect": { "type": "number", "name": "Entity Parry Effect", "information": "The effect to apply to the entity that was parried when successfully parrying<br> The ID corresponds to a command in the \"cushiled:event/entity_parry_effect\" function<br>0 for no effect", "min": 0, "max": 10000, "step": 1 }
+	}
+
+
+}
