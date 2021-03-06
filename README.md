@@ -73,9 +73,9 @@ Values used for damage calculation
 > `minimum_block_value` | value | minimum amount of damage to block with a non-parry block, linear falloff from maximum value over the `max_time` attribute's duration (default 0)
   
 Model values, these specify what CustomModelData values to use.
-> `default_model`* | value | custom model data used for default display
+> `default_model`* | value: [model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json) | custom model data used for default display
 > 
-> `blocking_model`* | value: model | custom model data used for blocking display
+> `blocking_model`* | value: [model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json) | custom model data used for blocking display
   
 Parry time values.
 > `parry_time` | value: time | amount of time you can parry
