@@ -118,6 +118,8 @@ the `block_value` attribute is not required if you have a `parry_time` equal to 
 This system modifies the loot table of the standard shulker box, so that it drops dynamically if mined with a `debug_stick`.
 
 ## Credit
-Main Functionality: [gibbsly](https://github.com/gibbsly) 
-Design: [Asometric](https://github.com/adri2711) [pearuhdox](https://github.com/pearuhdox)
-[Shield Generator Application](https://www.crowdford.com/tools/shield) and [Inventory Restoration System](https://github.com/McTsts/inv-manipulation): [McTsts](https://github.com/McTsts)
+**Main Functionality**: [gibbsly](https://github.com/gibbsly) 
+
+**Design**: [Asometric](https://github.com/adri2711) [pearuhdox](https://github.com/pearuhdox)
+
+**[Shield Generator Application](https://www.crowdford.com/tools/shield) and [Inventory Restoration System](https://github.com/McTsts/inv-manipulation)**: [McTsts](https://github.com/McTsts)
