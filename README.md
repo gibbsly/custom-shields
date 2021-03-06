@@ -10,17 +10,17 @@ For ease of use, there is a [generator](https://www.crowdford.com/tools/shield) 
 2. entity_hit_detection | My [entity hit detection datapack](https://github.com/gibbsly/ehid), packaged with this system since it is dependent on it to function.
 
 ### Resource Pack
-The resource pack is required for the shield models and sounds, as well as all text used. The resources for this are intended to be able to be merged into other resource packs, the only file that this should override is the [`carrot_on_a_stick` item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json).
+The resource pack is required for the shield models and sounds, as well as all text used. The resources for this are intended to be able to be merged into other resource packs, the only file that this should override is the `carrot_on_a_stick` [item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json).
 
-There are translations for all the strings used for this in the `shield/lang` folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
+There are translations for all the strings used for this in the [`shield/lang`](https://github.com/gibbsly/custom-shields/tree/main/custom_shield_resources/assets/shield/lang) folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
 
 #### Adding Models
-Adding new shield models requires you to create a standard model and a blocking model. I have 2 template models provided in the resource pack that you can reference off of. To display your models, add them to the `CustomModelData` overrides on the [`carrot_on_a_stick` item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json), then specify the `CustomModelData` values for each on the `default_model` and `blocking_model` attributes.
+Adding new shield models requires you to create a standard model and a blocking model. There are 2 template models provided in the resource pack that you can use as reference. To display your models, add them to the `CustomModelData` overrides on the `carrot_on_a_stick` [item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json), then specify the `CustomModelData` values for each on the `default_model` and `blocking_model` attributes.
 
 # About the shields
-In this section I will go over the shield system in detail. 
+Documented below is the core functionality of the shield system.
 
-The function `cushield:give_template_shield` gives you some template shields that you can try out. If you want to generate a shield there is a generator [here](https://www.crowdford.com/tools/shield).
+The function `cushield:give_template_shield` gives you some template shields that you can try out. If you want to generate a shield, there is a generator [here](https://www.crowdford.com/tools/shield).
 
 ## Blocking
 If you are holding a shield item in your main or offhand, and holding use (right click), you will start blocking. This is immediate, unlike vanilla shields. Shields in your offhand will be prioritized over mainhand shields.
@@ -104,7 +104,7 @@ The `bash_effect`, `player_parry_effect`, and `entity_parry_effect` attributes a
 
 The effect function is run on the player for `bash_effect` and `player_parry_effect`, and run on the entity you parried for `entity_parry_effect`.
 
-I have example commands in the functions that can be safely removed or changed.
+There are example commands in the functions that can be safely removed or changed.
 
 ## Icon
 When a player's shield is on cooldown, an animated icon will be displayed on the actionbar, this can be disabled if needed.
