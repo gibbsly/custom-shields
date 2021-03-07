@@ -52,7 +52,7 @@ If you want a shield to not be disabled by a disabler item, you can specify that
 Shields can execute a bash effect if you sprint while blocking, this is specified with the `block_effect` attribute. 
 
 ## Configurable Attributes 
-Shields have 18 configurable attributes you can use, any attributes marked with a `*` are required for the shield to function as intended. All these attributes are in an object called `shield` in the items tags.
+Shields have 20 configurable attributes you can use, any attributes marked with a `*` are required for the shield to function as intended. All these attributes are in an object called `shield` in the items tags.
 
 Block angle attributes, this specifies a rectangle in which the center of the entity that is being blocked must be within for a block to register. This value is a total angle, eg. 90 will be 45 degrees in each direction.
 > `x_angle`* | value: angle | vertical angle for blocking window
@@ -90,6 +90,10 @@ Event values. These specify a command to run in the functions `cushield:event/<b
 > `player_parry_effect` | value: [effect](https://github.com/gibbsly/custom-shields#adding-effects) | effect to apply to player when a parry succeeds
 > 
 > `entity_parry_effect` | value: [effect](https://github.com/gibbsly/custom-shields#adding-effects) | effect to apply to entity that hit player when a parry succeeds
+> 
+> `player_block_effect` | value: [effect](https://github.com/gibbsly/custom-shields#adding-effects) | effect to apply to player when a block succeeds
+> 
+> `entity_block_effect` | value: [effect](https://github.com/gibbsly/custom-shields#adding-effects) | effect to apply to entity that hit player when a block succeeds
   
 Disabler attributes.
 > `disable_resistant` | true/false | can't be disabled when hit with an item in the `#cushield:disabler` item tag/item with `{disabler:1b}`
@@ -100,7 +104,7 @@ Arrow reflection.
 > `can_reflect_arrows` | true/false | weather the shield can reflect blocked arrows
 
 ## Adding effects
-The `bash_effect`, `player_parry_effect`, and `entity_parry_effect` attributes all use an ID system to run effects. The ID you specify runs a command in the corresponding function in the [event](https://github.com/gibbsly/custom-shields/tree/main/custom_shield_datapacks/custom_shield/data/cushield/functions/event) folder. The value is written onto the score `effect= cush.main`, so you can use that to specify what function/command to run based on that score. 
+The `bash_effect`, `player_parry_effect`, `entity_parry_effect`, `player_block_effect`, and `entity_block_effect` attributes all use an ID system to run effects. The ID you specify runs a command in the corresponding function in the [event](https://github.com/gibbsly/custom-shields/tree/main/custom_shield_datapacks/custom_shield/data/cushield/functions/event) folder. The value is written onto the score `effect= cush.main`, so you can use that to specify what function/command to run based on that score. 
 
 The effect function is run on the player for `bash_effect` and `player_parry_effect`, and run on the entity you parried for `entity_parry_effect`.
 

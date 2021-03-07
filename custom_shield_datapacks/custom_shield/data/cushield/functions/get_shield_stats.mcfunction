@@ -25,6 +25,8 @@ execute store result score @s cush.block_val run data get storage cushield:main 
 execute store result score min= cush.main run data get storage cushield:main shield.tag.shield.minimum_block_value
 execute store result score @s cush.py.eff.pl run data get storage cushield:main shield.tag.shield.player_parry_effect
 execute store result score @s cush.py.eff.en run data get storage cushield:main shield.tag.shield.entity_parry_effect
+execute store result score @s cush.bl.eff.pl run data get storage cushield:main shield.tag.shield.entity_block_effect
+execute store result score @s cush.bl.eff.en run data get storage cushield:main shield.tag.shield.entity_block_effect
 execute store result score @s cush.durability run data get storage cushield:main shield.tag.shield.current_durability
 
 #default values

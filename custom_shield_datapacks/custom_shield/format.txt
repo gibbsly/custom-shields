@@ -9,6 +9,8 @@ y_angle             | value - angle	| horizontal angle for blocking window
 Normal Blocking
 *block_value         | value			| amount of damage to reduce from non-parry block
 minimum_block_value | value			| minimum amount of damage to block, *Presets: High: (m = block_value), Medium: (m = 1/2 block_value), Low: (m = 0)
+*player_block_effect | value			| effect to apply to player when a block succeeds
+*entity_block_effect | value			| effect to apply to entity that hit player when a block succeeds
 
 Parry
 parry_time			| value	- time	| amount of time you can parry

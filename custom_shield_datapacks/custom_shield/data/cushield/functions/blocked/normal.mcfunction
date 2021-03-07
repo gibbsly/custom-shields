@@ -1,3 +1,9 @@
+#setting entity parry effect
+scoreboard players operation entity_block= cush.main = @s cush.bl.eff.en
+
+#running player effect if applicable
+execute if score @s cush.bl.eff.pl matches 1.. run function cushield:blocked/normal/player
+
 #damage calculations 
 ## formula v1 
 ## damage * 10 - ((block_value * 100) - ((time - parry_time) * decay))

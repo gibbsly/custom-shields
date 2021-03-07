@@ -30,11 +30,13 @@ scoreboard objectives add cush.x_angle dummy "x block angle (vertical)"
 scoreboard objectives add cush.y_angle dummy "y block angle (horizontal)"
 ##times
 scoreboard objectives add cush.max_time dummy "maximum block time"
-scoreboard objectives add cush.decay dummy "block value decay"
 scoreboard objectives add cush.cooldown dummy "re-parry time"
 scoreboard objectives add cush.spam dummy "spam detection"
-##resistances
+##default values
 scoreboard objectives add cush.block_val dummy "block value"
+scoreboard objectives add cush.decay dummy "block value decay"
+scoreboard objectives add cush.bl.eff.pl dummy "successful block player effect id"
+scoreboard objectives add cush.bl.eff.en dummy "successful block entity effect id"
 ##parry values
 scoreboard objectives add cush.parry dummy "parry time in ticks"
 scoreboard objectives add cush.py.eff.pl dummy "successful parry player effect id"
