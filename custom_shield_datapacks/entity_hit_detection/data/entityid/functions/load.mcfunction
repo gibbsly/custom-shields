@@ -1,6 +1,8 @@
 #listen scores
 scoreboard objectives add ehp_listen dummy
 scoreboard objectives add phe_listen dummy
+scoreboard objectives add ekp_listen dummy
+scoreboard objectives add pke_listen dummy
 
 #entity id value scores
 scoreboard objectives add entityid dummy
