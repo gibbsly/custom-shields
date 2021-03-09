@@ -1,8 +1,8 @@
 {
 	"gui_light": "front",
 	"textures": {
-		"shield": "entity/shield_base",
-		"particle": "entity/shield_base"
+		"particle": "shield:template_shield",
+		"shield": "shield:template_shield"
 	},
 	"elements": [
 		{
