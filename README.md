@@ -1,5 +1,5 @@
 # Custom Shields
-This is a system that adds custom shields to Minecraft with configurable attributes. 
+This is a system that adds custom shields to Minecraft with configurable attributes. These shields work in both PVE and PVP.
 
 For ease of use, there is a [generator](https://www.crowdford.com/tools/shield) that you can use to make shields for this system.
 
