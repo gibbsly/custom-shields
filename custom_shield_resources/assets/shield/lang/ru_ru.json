@@ -1,0 +1,19 @@
+{
+	"item.shield": "Щит",
+	"item.buckler": "Баклер",
+	"subtitles.item.shield.up": "Щит поднят",
+	"subtitles.item.shield.down": "Щит опущен",
+	"subtitles.item.shield.ready": "Щит восстановлен",
+	"subtitles.item.shield.break": "Щит выведен из строя",
+	"attribute.modifier.equals.time": "%s: %s с",
+	"item.modifiers.blocking": "При блокировании:",
+	"attribute.name.shield.block": "Блокированный урон",
+	"attribute.name.shield.block_time": "Длительность блока",
+	"attribute.name.shield.parry_time": "Длительность парирования",
+	"attribute.name.shield.decay.high": "Большое ослабление",
+	"attribute.name.shield.decay.med": "Среднее ослабление",
+	"attribute.name.shield.decay.low": "Малое ослабление",
+	"attribute.name.shield.angle.wide": "Широкий угол блока",
+	"attribute.name.shield.angle.normal": "Средний угол блока",
+	"attribute.name.shield.angle.narrow": "Узкий угол блока"
+}
