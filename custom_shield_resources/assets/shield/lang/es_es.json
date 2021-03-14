@@ -10,9 +10,9 @@
 	"attribute.name.shield.block": "Reducción máxima de daño",
 	"attribute.name.shield.block_time": "Duración de bloqueo",
 	"attribute.name.shield.parry_time": "Duración del desvío",
-	"attribute.name.shield.decay.high": "Duración baja",
-	"attribute.name.shield.decay.med": "Duración media",
-	"attribute.name.shield.decay.low": "Duración alta",
+	"attribute.name.shield.decay.high": "Durabilidad baja",
+	"attribute.name.shield.decay.med": "Durabilidad media",
+	"attribute.name.shield.decay.low": "Durabilidad alta",
 	"attribute.name.shield.angle.wide": "Ángulo de bloqueo ancho",
 	"attribute.name.shield.angle.normal": "Ángulo de bloqueo normal",
 	"attribute.name.shield.angle.narrow": "Ángulo de bloqueo estrecho"
