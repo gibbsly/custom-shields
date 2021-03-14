@@ -94,7 +94,7 @@
 		"sounds": [
 			"random/break"
 		],
-		"subtitle": "subtitles.item.shield.break"
+		"subtitle": "subtitles.item.shield.disable"
 	},
 	"large_shield.break.crack": {
 		"sounds": [

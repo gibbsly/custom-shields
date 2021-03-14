@@ -4,7 +4,7 @@
 	"subtitles.item.shield.up": "Щит поднят",
 	"subtitles.item.shield.down": "Щит опущен",
 	"subtitles.item.shield.ready": "Щит восстановлен",
-	"subtitles.item.shield.break": "Щит выведен из строя",
+	"subtitles.item.shield.disable": "Щит выведен из строя",
 	"attribute.modifier.equals.time": "%s: %s с",
 	"item.modifiers.blocking": "При блокировании:",
 	"attribute.name.shield.block": "Блокированный урон",
