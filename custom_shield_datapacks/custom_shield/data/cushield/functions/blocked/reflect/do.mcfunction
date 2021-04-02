@@ -8,7 +8,7 @@ data modify storage cushield:main arrow set value {Tags:[],Motion:[0d,0d,0d],Own
 #creating data
 execute positioned 0.0 0.0 0.0 run tp 63757368-0-0-0-1 ^ ^ ^1
 data modify storage cushield:main arrow.Motion set from entity 63757368-0-0-0-1 Pos
-tp 63757368-0-0-0-1 0 0 0
+execute in minecraft:overworld run tp 63757368-0-0-0-1 0 0 0
 data modify storage cushield:main arrow.Owner set from entity @s UUID
 
 #scaling speed based on block time

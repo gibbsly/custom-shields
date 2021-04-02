@@ -9,7 +9,7 @@ execute as 63757368-0-0-0-1 at @s facing entity @e[type=!#entityid:id_skip,tag=c
 data modify storage cushield:main entity_rotation.eyes set from entity 63757368-0-0-0-1 Rotation
 execute as 63757368-0-0-0-1 at @s facing entity @e[type=!#entityid:id_skip,tag=cushield.attacker,limit=1] feet run tp @s ~ ~ ~ ~ ~
 data modify storage cushield:main entity_rotation.feet set from entity 63757368-0-0-0-1 Rotation
-tp 63757368-0-0-0-1 0 0 0
+execute in minecraft:overworld run tp 63757368-0-0-0-1 0 0 0
 
 #x rotation deviation - angle based on center point between eyes and feet
 execute store result score x_rotation= cush.main run data get storage cushield:main entity_rotation.feet[1]
