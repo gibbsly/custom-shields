@@ -1,0 +1,19 @@
+{
+	"item.shield": "Schild",
+	"item.buckler": "Buckler",
+	"subtitles.item.shield.up": "Schild hoch",
+	"subtitles.item.shield.down": "Schild runter",
+	"subtitles.item.shield.ready": "Schild bereit",
+	"subtitles.item.shield.disable": "Schild deaktiviert",
+	"attribute.modifier.equals.time": "%ss %s",
+	"item.modifiers.blocking": "Beim Blocken:",
+	"attribute.name.shield.block": "Max. Schadensreduzierung",
+	"attribute.name.shield.block_time": "Blockdauer",
+	"attribute.name.shield.parry_time": "Parierdauer",
+	"attribute.name.shield.decay.high": "Niedrige Persistenz",
+	"attribute.name.shield.decay.med": "Mittlere Persistenz",
+	"attribute.name.shield.decay.low": "Hohe Persistenz",
+	"attribute.name.shield.angle.wide": "Breiter Blockwinkel",
+	"attribute.name.shield.angle.normal": "Durchschnittlicher Blockwinkel",
+	"attribute.name.shield.angle.narrow": "Enger Blockwinkel"
+}
