@@ -20,7 +20,7 @@ data modify storage cushield:main item set value {}
 #replacing
 execute if entity @s[tag=cushield.offhand,tag=!cushield.break] run loot replace entity @s weapon.offhand 1 mine 29999999 0 91665 minecraft:debug_stick
 execute if entity @s[tag=!cushield.offhand,tag=!cushield.break] run loot replace entity @s weapon.mainhand 1 mine 29999999 0 91665 minecraft:debug_stick
-execute if entity @s[tag=cushield.offhand,tag=cushield.break] run replaceitem entity @s weapon.offhand air
-execute if entity @s[tag=!cushield.offhand,tag=cushield.break] run replaceitem entity @s weapon.mainhand air
+execute if entity @s[tag=cushield.offhand,tag=cushield.break] run item replace entity @s weapon.offhand with air
+execute if entity @s[tag=!cushield.offhand,tag=cushield.break] run item replace entity @s weapon.mainhand with air
 execute if entity @s[tag=cushield.break] anchored eyes run particle item shield ^ ^ ^1 0.1 0.1 0.1 0.1 8
 tag @s remove cushield.break

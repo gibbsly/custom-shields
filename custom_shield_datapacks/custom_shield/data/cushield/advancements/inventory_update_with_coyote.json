@@ -5,8 +5,10 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:carrot_on_a_stick",
-						"nbt": "{shield:{can_coyote:1}}"
+						"nbt": "{shield:{can_coyote:1}}",
+						"items": [
+							"minecraft:carrot_on_a_stick"
+						]
 					}
 				]
 			}
