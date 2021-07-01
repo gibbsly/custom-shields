@@ -1,5 +1,6 @@
 {
 	"values": [
+		"minecraft:marker",
 		"minecraft:arrow",
 		"minecraft:dragon_fireball",
 		"minecraft:egg",
@@ -34,6 +35,7 @@
 		"minecraft:eye_of_ender",
 		"minecraft:fishing_bobber",
 		"minecraft:item_frame",
+		"minecraft:glow_item_frame",
 		"minecraft:leash_knot",
 		"minecraft:lightning_bolt",
 		"minecraft:painting"
