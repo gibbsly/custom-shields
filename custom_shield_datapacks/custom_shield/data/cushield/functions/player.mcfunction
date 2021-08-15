@@ -6,7 +6,7 @@ execute if score icon= cush.main matches 1 if entity @s[tag=!cushield.can_block,
 execute unless entity @s[tag=cushield.can_block] unless score @s cush.block_time matches 0.. unless score @s cush.wait matches 1.. run function cushield:block/can
 
 #running blocking function
-execute if score @s[tag=cushield.can_block] cush.block_time matches 0.. unless score @s cush.wait matches 1.. run function cushield:block
+execute if score @s[tag=cushield.can_block,predicate=cushield:holding_shield] cush.block_time matches 0.. unless score @s cush.wait matches 1.. run function cushield:block
 
 #resetting use score
 scoreboard players reset @s[scores={cush.use=1..}] cush.use
