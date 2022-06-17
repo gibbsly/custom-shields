@@ -20,6 +20,7 @@
 		"minecraft:item",
 		"minecraft:boat",
 		"minecraft:minecart",
+		"minecraft:chest_boat",
 		"minecraft:chest_minecart",
 		"minecraft:command_block_minecart",
 		"minecraft:furnace_minecart",

@@ -1,5 +1,6 @@
 {
 	"values": [
+		"minecraft:allay",
 		"minecraft:axolotl",
 		"minecraft:bat",
 		"minecraft:bee",
@@ -19,6 +20,7 @@
 		"minecraft:endermite",
 		"minecraft:evoker",
 		"minecraft:fox",
+		"minecraft:frog",
 		"minecraft:ghast",
 		"minecraft:glow_squid",
 		"minecraft:goat",
@@ -59,6 +61,7 @@
 		"minecraft:squid",
 		"minecraft:stray",
 		"minecraft:strider",
+		"minecraft:tadpole",
 		"minecraft:trader_llama",
 		"minecraft:trident",
 		"minecraft:tropical_fish",
@@ -67,6 +70,7 @@
 		"minecraft:villager",
 		"minecraft:vindicator",
 		"minecraft:wandering_trader",
+		"minecraft:warden",
 		"minecraft:witch",
 		"minecraft:wither",
 		"minecraft:wither_skeleton",
