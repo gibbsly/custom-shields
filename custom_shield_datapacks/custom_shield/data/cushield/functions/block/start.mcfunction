@@ -25,5 +25,4 @@ scoreboard players reset @s cush.sprint
 function cushield:get_shield_stats
 
 #modifying item
-##create item modifier to do this in 1.17
 function cushield:block/modify_item

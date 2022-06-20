@@ -76,6 +76,5 @@ scoreboard players set 25 num 25
 scoreboard players set 100 num 100
 
 #summoning armorstand used for angle calculations and placing shulker box used for item modification
-function inv:setup
 forceload add -1 -1 1 1
 execute unless entity 63757368-0-0-0-1 run summon minecraft:armor_stand 0 0 0 {UUID:[I;1668641640,0,0,1],Marker:1b,Small:1b,Invisible:1b}

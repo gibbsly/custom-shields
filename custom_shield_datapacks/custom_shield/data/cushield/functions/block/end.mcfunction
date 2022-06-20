@@ -26,7 +26,6 @@ scoreboard players set @s cush.block_total 0
 scoreboard players set @s cush.spam 0
 
 #modifying item
-##create item modifier to do this in 1.17
 function cushield:block/modify_item
 tag @s remove cushield.offhand
 tag @s remove cushield.disable

@@ -1,0 +1,9 @@
+execute if score slot= cushield.main matches 27 run item modify entity @s inventory.18 cushield:copy_item
+execute if score slot= cushield.main matches 28 run item modify entity @s inventory.19 cushield:copy_item
+execute if score slot= cushield.main matches 29 run item modify entity @s inventory.20 cushield:copy_item
+execute if score slot= cushield.main matches 30 run item modify entity @s inventory.21 cushield:copy_item
+execute if score slot= cushield.main matches 31 run item modify entity @s inventory.22 cushield:copy_item
+execute if score slot= cushield.main matches 32 run item modify entity @s inventory.23 cushield:copy_item
+execute if score slot= cushield.main matches 33 run item modify entity @s inventory.24 cushield:copy_item
+execute if score slot= cushield.main matches 34 run item modify entity @s inventory.25 cushield:copy_item
+execute if score slot= cushield.main matches 35 run item modify entity @s inventory.26 cushield:copy_item
