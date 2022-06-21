@@ -58,11 +58,18 @@ scoreboard objectives add cush.health health
 scoreboard objectives add cush.atk minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add cush.dam minecraft.custom:minecraft.damage_taken
 scoreboard objectives add cush.dmg minecraft.custom:minecraft.damage_resisted
-scoreboard objectives add cush.use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add cush.abs minecraft.custom:minecraft.damage_absorbed
 scoreboard objectives add cush.fall minecraft.custom:minecraft.fall_one_cm
-scoreboard objectives add cush.drop minecraft.dropped:minecraft.carrot_on_a_stick
 scoreboard objectives add cush.sprint minecraft.custom:minecraft.sprint_one_cm
+
+scoreboard objectives add cush.use_cs minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add cush.drop_cs minecraft.dropped:minecraft.carrot_on_a_stick
+
+scoreboard objectives add cush.use_ws minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add cush.drop_ws minecraft.dropped:minecraft.warped_fungus_on_a_stick
+
+scoreboard objectives add cush.use_eye dummy
+scoreboard objectives add cush.drop_eye minecraft.dropped:minecraft.ender_eye
 
 #numbers used
 scoreboard objectives add num dummy
@@ -75,6 +82,6 @@ scoreboard players set 20 num 20
 scoreboard players set 25 num 25
 scoreboard players set 100 num 100
 
-#summoning armorstand used for angle calculations and placing shulker box used for item modification
+#summoning armorstand used for angle calculations
 forceload add -1 -1 1 1
 execute unless entity 63757368-0-0-0-1 run summon minecraft:armor_stand 0 0 0 {UUID:[I;1668641640,0,0,1],Marker:1b,Small:1b,Invisible:1b}

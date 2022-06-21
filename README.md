@@ -7,20 +7,24 @@ For ease of use, there is a [generator](https://www.crowdford.com/tools/shield) 
 
 ### Datapacks
 1. `custom_shield` | The core system for the custom shields
-2. entity_hit_detection | My [entity hit detection datapack](https://github.com/gibbsly/ehid), packaged with this system since it is dependent on it to function.
+2. `entity_hit_detection` | My [entity hit detection datapack](https://github.com/gibbsly/ehid), packaged with this system since it is dependent on it to function.
 
 ### Resource Pack
-The resource pack is required for the shield models and sounds, as well as all text used. The resources for this are intended to be able to be merged into other resource packs, the only file that this should override is the `carrot_on_a_stick` [item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json).
+The resource pack is required for the shield models and sounds, as well as all text used. The resources for this are intended to be able to be merged into other resource packs, the only file that this should override is the `carrot_on_a_stick|warped_fungus_on_a_stick|ender_eye` [item models](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item).
 
 There are translations for all the strings used for this in the [`shield/lang`](https://github.com/gibbsly/custom-shields/tree/main/custom_shield_resources/assets/shield/lang) folder. If you would like to contribute to translations, you can create a pull request with an additional lang file.
 
 #### Adding Models
-Adding new shield models requires you to create a standard model and a blocking model. There are 2 template models provided in the resource pack that you can use as reference. To display your models, add them to the `CustomModelData` overrides on the `carrot_on_a_stick` [item model](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item/carrot_on_a_stick.json), then specify the `CustomModelData` values for each on the `default_model` and `blocking_model` attributes.
+Adding new shield models requires you to create a standard model and a blocking model. There are 2 template models provided in the resource pack that you can use as reference. To display your models, add them to the `CustomModelData` overrides on the `carrot_on_a_stick|warped_fungus_on_a_stick|ender_eye` [item models](https://github.com/gibbsly/custom-shields/blob/main/custom_shield_resources/assets/minecraft/models/item), then specify the `CustomModelData` values for each on the `default_model` and `blocking_model` attributes.
 
 # About the shields
 Documented below is the core functionality of the shield system.
 
 The function `cushield:give_template_shield` gives you some template shields that you can try out. If you want to generate a shield, there is a generator [here](https://www.crowdford.com/tools/shield).
+
+There are 3 separate items that work as shields, `carrot_on_a_stick`, `warped_fungus_on_a_stick`, and `ender_eye`. 
+
+`carrot_on_a_stick` and `warped_fungus_on_a_stick` both allow the player to move at a normal walking speed while blocking as well as allow them to activate a bash while blocking. `ender_eye` slows the player identically to how vanilla shields slow players, also `ender_eye` shields cannot activate a bash.
 
 ## Blocking
 If you are holding a shield item in your main or offhand, and holding use (right click), you will start blocking. This is immediate, unlike vanilla shields. Shields in your offhand will be prioritized over mainhand shields.
@@ -119,15 +123,13 @@ If you want to disable a specific player from seeing the icon, you can set the p
 
 ## Footnotes
 ### 1: durability
-Since the item that is being used for the shields is `carrot_on_a_stick`, there is only 25 possible durabilities to display all damage values for the shields. This means that the `f3+h` "Durability" value will be inaccurate unless the maximum durability of your shield happens to be 25.
+If the item that is being used for the shields is `carrot_on_a_stick`, there is only 25 possible durabilities to display all damage values for the shields. This means that the `f3+h` "Durability" value will be inaccurate unless the maximum durability of your shield happens to be 25. If you use a `warped_fungus_on_a_stick` there are 100 possible durabilities. If you use an `ender_eye` the durability cannot be displayed.
 ### 2: block value
 the `block_value` attribute is not required if you have a `parry_time` equal to `max_time`
-### 3: shulker box
-This system modifies the loot table of the standard shulker box, so that it drops dynamically if mined with a `debug_stick`.
 
 ## Credit
 **Main Functionality**: [gibbsly](https://github.com/gibbsly) 
 
 **Design**: [Asometric](https://github.com/adri2711), [pearuhdox](https://github.com/pearuhdox)
 
-**[Shield Generator Application](https://www.crowdford.com/tools/shield) and [Inventory Restoration System](https://github.com/McTsts/inv-manipulation)**: [McTsts](https://github.com/McTsts)
+**[Shield Generator Application](https://www.crowdford.com/tools/shield)**: [McTsts](https://github.com/McTsts)

@@ -1,0 +1,12 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/ender_eye"
+    },
+	"overrides": [
+		{"predicate": {"custom_model_data": 1}, "model": "shield:template"},
+		{"predicate": {"custom_model_data": 2}, "model": "shield:template_blocking"},
+		{"predicate": {"custom_model_data": 3}, "model": "shield:buckler"},
+		{"predicate": {"custom_model_data": 4}, "model": "shield:buckler_blocking"}
+	]
+}

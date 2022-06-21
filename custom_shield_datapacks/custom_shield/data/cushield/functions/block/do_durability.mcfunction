@@ -1,7 +1,8 @@
 #calculating display durabiltiy
 execute store result score max= cush.durability run data get storage cushield:main item.tag.shield.durability
 scoreboard players operation display= cush.durability = @s cush.durability
-scoreboard players operation display= cush.durability *= 25 num
+execute if data storage cushield:main item{id:"minecraft:carrot_on_a_stick"} run scoreboard players operation display= cush.durability *= 25 num
+execute if data storage cushield:main item{id:"minecraft:warped_fungus_on_a_stick"} run scoreboard players operation display= cush.durability *= 100 num
 scoreboard players operation display= cush.durability /= max= cush.durability
 execute if score @s cush.durability matches 1.. if score display= cush.durability matches 0 run scoreboard players set display= cush.durability 1
 execute if score @s cush.durability > max= cush.durability run tag @s add cushield.break

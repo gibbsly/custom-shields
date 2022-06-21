@@ -1,5 +1,6 @@
 #spam detection
-scoreboard players add @s[scores={cush.use=1..}] cush.spam 1
+scoreboard players add @s[scores={cush.use_cs=1..}] cush.spam 1 
+scoreboard players add @s[scores={cush.use_ws=1..}] cush.spam 1 
 scoreboard players remove @s[scores={cush.block_time=3}] cush.spam 1
 scoreboard players remove @s[scores={cush.res.dur=1..}] cush.res.dur 1
 
@@ -13,6 +14,7 @@ execute if score @s[tag=cushield.coyote] cush.cy.dur matches 1.. run function cu
 execute if score @s cush.block_total matches 1 run function cushield:block/start
 
 #bashing if applicable
+scoreboard players reset @s[advancements={cushield:use_ender_eye=true},scores={cush.sprint=1..}] cush.sprint
 execute if score @s cush.sprint matches 1.. if score @s cush.bash matches 1.. run function cushield:block/bash
 
 #giving resistance

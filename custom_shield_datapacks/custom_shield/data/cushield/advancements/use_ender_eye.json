@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"use": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:ender_eye"
+					],
+					"nbt": "{shield:{}}"
+				}
+			}
+		},
+		"base": {
+			"trigger": "minecraft:location"
+		}
+	}
+}
