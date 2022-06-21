@@ -1,3 +1,4 @@
+execute if score slot= cushield.main matches -106 run item modify entity @s weapon.offhand cushield:copy_item
 execute if score slot= cushield.main matches 0 run item modify entity @s hotbar.0 cushield:copy_item
 execute if score slot= cushield.main matches 1 run item modify entity @s hotbar.1 cushield:copy_item
 execute if score slot= cushield.main matches 2 run item modify entity @s hotbar.2 cushield:copy_item
